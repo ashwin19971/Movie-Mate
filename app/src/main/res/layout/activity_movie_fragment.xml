@@ -1,0 +1,14 @@
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <ListView
+        android:layout_width="match_parent"
+        android:id="@+id/lvInTheaters"
+        android:background="#fff"
+        android:divider="#D3D3D3"
+        android:dividerHeight="7sp"
+        android:layout_height="match_parent">
+    </ListView>
+</FrameLayout>

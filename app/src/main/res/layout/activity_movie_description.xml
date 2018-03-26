@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:background="#e62117"
+        android:id="@+id/tvTitleHeader"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:text="TITLE"
+        android:gravity="center|left"
+        android:textStyle="normal"
+        android:paddingLeft="10sp"
+        android:textSize="15sp"
+        android:textColor="#fff"/>
+
+    <com.google.android.youtube.player.YouTubePlayerView
+        android:layout_margin="5sp"
+        android:id="@+id/youtube_view"
+        android:layout_width="wrap_content"
+        android:scaleType="fitXY"
+        android:layout_height="wrap_content"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:paddingLeft="5sp"
+            android:scaleType="fitXY"
+            android:layout_margin="10dp"
+            android:id="@+id/ivPosterImage"
+            android:layout_width="80sp"
+            android:layout_height="95sp" />
+
+        <LinearLayout
+            android:paddingLeft="10dp"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tvTitle"
+                android:textSize="15sp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:paddingBottom="5dp"
+                android:layout_height="wrap_content"
+                android:text="TITLE"/>
+            <TextView
+                android:id="@+id/tvRating"
+                android:textSize="15sp"
+                android:paddingBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rating"/>
+            <TextView
+                android:id="@+id/tvReleased"
+                android:textSize="15sp"
+                android:paddingBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Released"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:textSize="14sp"
+            android:id="@+id/tvOverView"
+            android:text="OVERVIEW"/>
+    </ScrollView>
+
+
+</LinearLayout>
